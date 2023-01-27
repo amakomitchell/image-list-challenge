@@ -1,0 +1,75 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+
+.modal {
+  background: white;
+  position: relative;
+  margin: 1.75rem auto;
+  border-radius: 3px;
+  padding: 2rem;
+  width: calc(100vw * 0.6);
+  height: 80%;
+  overflow-y: scroll;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-close-button {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  opacity: 0.3;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-body {
+  width: calc(100vw * 0.6);
+  height: 90%;
+}
+
+.modal-content {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 16px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 250px;
+}
+
+/* on mobile device, make the grid only 1 item per row */
+@media (min-width: 600px) {
+  .modal-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

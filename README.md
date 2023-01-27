@@ -4,6 +4,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 This is a code challenge for Vinted. It displays an infinite scroll of images gotten from Flickr. These images can be added to favorite and saves in local storage.
+The images are gotten from one gallery, with the galleryId. If you would like to render a different gallery, browse galleries on https://www.flickr.com/photos/flickr/galleries/
+and replace the value of GALLERY_ID on the constants.ts file with your galleryID.
 
 ## How to run this application
 
